@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width:90%;
+    margin:auto;
+}
+/*================================== navigation bar css========================== */
+
+.nav_bar{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    background-color: gray;
+    height: 50px;
+    justify-content: space-between;
+}
+
+.nav_bar .first_box{
+    margin: 15px;
+}
+
+.nav_bar .second_box{
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+/* ============================header css ========================================= */
+
+.header_bar{
+    width: 100%;
+    height: 50vh;
+    background-color: black;
+    color: white;
+}
+
+/* =============================section_first css ============================================= */
+
+.section_first{
+    width: 100%;
+    height: 50vh;
+    background-color: gray;
+}
+
+/* =================section-second css============== */
+.section_second{
+    width: 100%;
+    height: 50vh;
+    color: white;
+    background-color: black;
+}
+
+ .inside_box{
+    width: 100%;
+    
+}
+ .inside_box .projects_wrap{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px 10px 10px 10px;
+}
+
+ .inside_box .projects_wrap .project{
+    height: 200px;
+    width: 200px;
+    border: 3px solid red;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+ .inside_box .projects_wrap .project .image{
+    height: 30%;
+}
+
+ .inside_box .projects_wrap .project .image img{
+   
+    width: 100%;
+    height: 100px;
+}
+
+.inside_box .projects_wrap .project .caption_container {
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.inside_box .projects_wrap .project .caption_container div:first-child{
+    font-size: 20px;
+    font-weight: 700;
+}
+.inside_box .projects_wrap .project .caption_container div:last-child{
+    font-size: 10px;
+}
