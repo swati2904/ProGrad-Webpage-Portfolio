@@ -9,71 +9,79 @@
 </head>
 
 <body>
-    <!-- ============================ Navigation Part ======================================== -->
+    <div class="container">
+    <!-- ============================== Navigation Part ==================================== -->
 
     <nav class="nav_bar">
         <div class="first_box">
-            <a class="link-child" href="#Prograd">Prograd</a>
+            <a class="link-child" href="#">Swati Saxena</a>
         </div>
         <div class="second_box">
-            <a class="link-child" href="#Home">
+            <a class="link-child" href="#home">
                 <div> Home </div>
             </a>
-            <a class="link-child" href="#Bio">
+            <a class="link-child" href="#bio">
                 <div> Bio </div>
             </a>
-            <a class="link-child" href="#Portfolio">
+            <a class="link-child" href="#portfolio">
                 <div> Portfolio </div>
             </a>
-            <a class="link-child" href="#Skills">
+            <a class="link-child" href="#skills">
                 <div> Skills </div>
             </a>
-            <a class="link-child" href="#Contact">
+            <a class="link-child" href="#contact">
                 <div> Contact </div>
             </a>
         </div>
     </nav>
-    <!-- ================================= Header Part ========================================= -->
-    <header class="header_bar">
+    <!-- ================================= Header Part ====================================== -->
+    <header id="home">
         <div class="container">
-            <div class="content_first"> I believe in</div>
-            <div class="content_second">EAT(); SLEEP(): CODE(): REPEAT();</div>
+            <div class="inside_content">
+                <div> I believe in</div>
+                <div style="font-weight: bolder;">EAT(); SLEEP(): CODE(): REPEAT();</div>
+            </div>
         </div>
-
     </header>
 
-    <!-- ================================= section Part I ====================================== -->
-    <section class="section_first">
+    <!-- ================================= section Part I =================================== -->
+    <section id="bio">
         <div class="container">
             <div class="Content_left">
-                <img src=" " alt="profile_picture" />
+                <img src="./assets/swati.jpeg" alt="profile_picture"  style="height:260px; width:260px; border-radius: 50%;"/>
             </div>
             <div class="content_right">
-                <div class="heading"> ProGrad</div>
+                <div class="heading">ABOUT ME</div>
                 <div class="inside_content">
-                    qwertyuiop;lkjhgfrdesazxcvbnm
-                    qwertyuiol,kmjhgfdsx cvbnm,
-                    wertyuiol,kmnhbgfc vbnm
-                    qwertyuioplkjhgfdsz vbnm
-                    wertyuiolkjhgfd xcvbnm,
+                    I'm a Computer Science Engineer, believing to give an effort from my side in any of the work. 
+                    Interested in web development and problem-solving skills. <br>
+                    Languages: C++, C, Python, PHP, SQLi <br>
+                    Platforms: VS Code, NetBeans, phpMyAdmin<br>
+                    Framework: vue.js, Bootstrap<br>
+                    Tools: Tableau, MS Excel<br><br>
+                    
+                    Development Skills:<br>
+                    (1) Skilled in OOPs, data structure, and problem-solving<br>
+                    (2) MVC Architecture - javascript<br>
+                    (3) Full-stack Development Toolkit: Javascript,ES6+,Oops, Ajax,Webpack Vue.js, HTML5, CSS3, Bootstrap<br>
+                    (4) Databases - Relational SQLi <br>
                 </div>
                 <a href="#"> Download My Resume</a>
             </div>
         </div>
     </section>
 
-    <!-- ================================= Section Part II ====================================== -->
-    <section class="section_second">
+    <!-- ================================= Section Part II =================================== -->
+    <section id="portfolio">
         <div class="container">
             <div class="heading"> Portfolio</div>
-        <p> Some of My Best Projects </p>
-        </div>
+            <p> Some of My Best Projects </p>
         
-    
+
+
 
         <div class="inside_box">
-            <div class="container">
-                <div class="projects_wrap">
+            <div class="projects_wrap">
                     <!-- first -->
                     <div class="project">
                         <div class="image">
@@ -109,19 +117,71 @@
                 </div>
             </div>
         </div>
-   
-    </section>
-    <!-- ================================= Section Part III ===================================== -->
-    <section>
 
     </section>
+    <!-- ================================= Section Part III ================================= -->
+    <section id="skills">
+        <div class="container">
+            <h3> SKILLS </h3>
+            <div>
+                <h4> TECHNICAL SKILLS </h4>
+                <div>
+                    <ul>
+                        <li>HTML</li>
+                        <li><progress max="100" value="90"></progress></li>
+                        <li>CSS</li>
+                        <li> <progress max="100" value="70"></progress></li>
+                        <li>JAVASCRIPT</li>
+                        <li><progress max="100" value="65"></progress></li>
+                        <li>BOOTSTRAP</li>
+                        <li><progress max="100" value="75"></progress></li>
+                        <li>JAVA</li>
+                        <li><progress max="100" value="50"></progress></li>
+                    </ul>
+                </div>
+            </div>
 
-    <!-- ================================= Footer Part =========================================== -->
-    <footer>
+            <div>
+                <h4> LANGUAGES</h4>
+                <div>
+                    <ul>
+                        <li>ENGLISH</li>
+                        <li><progress max="100" value="95"></progress> </li>
+                        <li>HINDI</li>
+                        <li><progress max="100" value="100"></progress></li>
+                        <li>PUNJABI</li>
+                        <li><progress max="100" value="60"></progress></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
+
+    <!-- ================================= Footer Part ====================================== -->
+    <footer id="contact">
+        <div class="container">
+        <h3> CONTACT</h3>
+        <form>
+            <label for="fname">First name:</label><br>
+            <input type="text"  name="fname"><br>
+            <label for="email">EMAIL:</label><br>
+            <input type="email"  name="email"><br>
+            <label for="address">ADDRESS:</label><br>
+            <input type="text"  name="address"><br>
+            <label for="comment">COMMENT:</label><br>
+            <input type="text"  name="comment"><br>
+            <input type="button" name="button" value="button">
+
+        </form>
+
+        </div>
     </footer>
-
+</div>
 
 </body>
 
 </html>
+
+
+
