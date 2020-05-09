@@ -8,13 +8,10 @@ html, body{
     width: 100%;
     font-family: Arial, Helvetica, sans-serif;
     background-color: black;
-    
-    
 }
 a{
     text-decoration: none;
 }
-
 ul{
     list-style: none;
 }
@@ -22,11 +19,23 @@ ul{
     width:90%;
     margin:auto;
 }
+
 .heading{
-    text-align: center;
+    font-size: 20px;
+    font-weight: 900;
+    text-transform: uppercase;
 }
-.sub-heading{
+
+.link_button{
+    background-color: orangered;
+    border: none;
+    color: white;
+    padding: 15px 32px;
     text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
 }
 /*================================== navigation bar css========================== */
 
@@ -36,12 +45,16 @@ ul{
     flex-direction: row;
     background-color:rgb(224,224,224);
     height: 50px;
+    width: 100%;
     justify-content: space-between;
+    padding:10px;
+   position: fixed;
+   
 }
 
 .nav_bar .first_box .link-child{
     margin: 15px;
-    color: rgb(255,170,0);
+    color: orangered;
     text-transform: uppercase;
     font-weight: 700;
 }
@@ -57,15 +70,28 @@ ul{
     font-weight: 500;
     text-transform: uppercase;
 }
- 
+
 /* ============================header css ========================================= */
 
 #home{
     width: 100%;
     height: 350px;
     color: white;
-}
+    justify-content: center;
+    align-items: center;
+    display: flex;
 
+}
+ .container .inside_content .first{
+    font-weight: lighter;
+    text-transform: uppercase;
+    font-size: 1.5em;
+}
+ .container .inside_content .second{
+    font-weight: bolder;
+    font-size: 3em;
+
+}
 
 /* =============================section_first css ============================================= */
 
@@ -73,54 +99,83 @@ ul{
     width: 100%;
     height: 350px;
     background-color:rgb(224,224,224);
-    color: black;
+    color:black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.content_left img{
+    height:260px; 
+    width:260px; 
+    border-radius: 50%;
+    margin: 100px;
+}
+.content_right *{
+    margin: 20px 0;
+
+}
+ .break{
+    display: block;
 }
 
-.content_left img{
-    width:250px;
-    height: 250px;
-}
 /* =================section-second css============== */
 #portfolio{
     width: 100%;
     height: 350px;
     color: white;
     background-image: url("./assets/background1.jpg");
+
 }
 
+hr{
+    width: 35%;
+    text-align:center; 
+    margin: 0 auto;
+}
  .inside_box{
     width: 100%;
     
 }
+
+.center{
+    text-align: center;
+}
+
+.center div {
+    margin: 30px 0;
+
+}
  .inside_box .projects_wrap{
     display: flex;
     justify-content: space-evenly;
-    margin: 50px 10px 10px 10px;
+    margin: 30px ;
     
 }
 
  .inside_box .projects_wrap .project{
-    height: 230px;
-    width: 200px;
-    border: 3px solid red;
+    height: 200px;
+    width: 230px;
+    border: 3px solid black;
     text-align: center;
-    margin-bottom: 20px;
-    border-radius: 5%;
+    border-radius: 8px;
 }
 
  .inside_box .projects_wrap .project .image{
-    height: 20%;
+    height: 40%;
 }
 
  .inside_box .projects_wrap .project .image img{
-    border-radius: 5%;
+   
+     border-top-left-radius: 8px;
+    border-top-right-radius: 8px; 
     width: 100%;
     height: 100px;
 }
 
 .inside_box .projects_wrap .project .caption_container {
-    height: 80%;
-    color: red;
+    height: 60%;
+    color: black;
+    background-color: white;
     padding-top: 10px;
     display: flex;
     flex-direction: column;
@@ -129,9 +184,11 @@ ul{
 .inside_box .projects_wrap .project .caption_container div:first-child{
     font-size: 20px;
     font-weight: 700;
+    
 }
 .inside_box .projects_wrap .project .caption_container div:last-child{
     font-size: 14px;
+    padding: 0 8px;
 }
 
 /* ========================section_third css ====================== */
@@ -140,18 +197,77 @@ ul{
     height: 350px;
     background-color:rgb(224,224,224);
     color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+
+}
+.skills_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+
+}
+#skills h4{
+    text-align: center;
+    padding: 10px 0;
+}
+#skills ul li{
+    margin: 8px 0;
+    
+}
+progress[value]{
+    height: 10px;
+    width: 350px;
+    -webkit-appearance: none;
 }
 
+progress[value]::-webkit-progress-bar {
+    background-color: gray;
+    border-radius: 2px;
+    box-shadow: 0 2px 5px rgba(0,0,0.25,inset);
+  }
 
+  progress[value]::-webkit-progress-value{
+    background-color: orangered; 
+}
 /* ==============================footer ======================================= */
 
 #contact{
     width: 100%;
     height: 350px;
     color: white;
+   text-align: center;
+   margin: 50px ;
+
+
+   
 }
 
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+   
 
+}
+.input{
+    line-height: 2em;
+    border-radius: 5px;
+    border-color: orangered;
+    margin: 15px;
+    width: 300px;
+
+}
+
+::-webkit-input-placeholder {
+    color: #808080;
+    text-align: center;
+ 
+ }
 
 
 
