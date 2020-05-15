@@ -59,6 +59,10 @@ ul{
     font-weight: 700;
 }
 
+.link-child div:hover {
+    color: orangered;
+}
+
 .nav_bar .second_box{
     width: 400px;
     display: flex;
